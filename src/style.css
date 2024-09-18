@@ -31,26 +31,18 @@ body {
 }
 
 .border-frame {
-  position: relative;
+  display: flex;
+  gap: 15px;
 }
 
-.border-frame::before,
-.border-frame::after {
-  position: absolute;
-  content: url(./svg/arrow.svg);
+#previous-arrow {
+  transform: rotate(180deg) scale(2);
   cursor: pointer;
 }
 
-.border-frame::before {
-  transform: rotate(180deg) scale(2);
-  top: 180px;
-  left: -40px;
-}
-
-.border-frame::after {
+#next-arrow {
   transform: scale(2);
-  top: 200px;
-  right: -40px;
+  cursor: pointer;
 }
 
 .frame {
