@@ -4,14 +4,19 @@
   "description": "Animation design/development for a JavaScript image carousel",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "serve": "webpack serve",
+    "lint": "eslint src/*.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.10.0",
     "css-loader": "^7.1.2",
     "eslint": "^9.10.0",
+    "globals": "^15.9.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.0",
     "style-loader": "^4.0.0",
